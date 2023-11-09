@@ -21,4 +21,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[UserController::class,'index']);
 Route::get('contact-us',[UserController::class,'contact'])->name('contact');
+Route::post('contact-us',[UserController::class,'store']);
 Route::get('about',[UserController::class,'about'])->name('about');
